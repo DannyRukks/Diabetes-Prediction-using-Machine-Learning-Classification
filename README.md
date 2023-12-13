@@ -24,4 +24,26 @@ on the selection of these instances from a larger database. In particular, all p
 # Exploratory Data Analysis
 Exploratory data analysis were performed before training the data. Bar Chart of the value counts for the "Outcome" column to calculate the relative frequencies of the classes was created. This shows the relative proportion of diabetes and non diabetes.
 
+![Bar chart](https://github.com/DannyRukks/Diabetes-Prediction-using-Machine-Learning-Classification/assets/97890440/621982fb-b610-4b33-a20d-6fcc21cf8bf7)
+
+The proportion of non-diabetes patient in the dataset is 65%. We checked for multicollinearity in the dataset by performing a heat map plot to show the correlations among the features. This is displayed below:
+
+# Classifier Models
+The dataset was trained using logistic regression and three other classifiers such as KNearest neighbor classifier, Decision tree classifer and Random Forest classifier. All models used the same training and test splits and the same cross-validation method. The models were tune using hyper parameters and the best parameters were used for the prediction. The result for the models is displayed below
+```
+Results = pd.DataFrame({    
+    "Methods" : ["Logistic Regression", "Decision Tree", "KNN", "Random Forest"],    
+    "Train Accuracy" : [logreg_cv.best_score_, tree_cv.best_score_, knn_cv.best_score_, RF_cv.best_score_],
+    "Test_Accuracy": METHOD   
+})
+Results
+```
+![Tabular result](https://github.com/DannyRukks/Diabetes-Prediction-using-Machine-Learning-Classification/assets/97890440/e87f6a14-4e4a-47f7-9b3b-4e62cc6a4876)
+
+# Best Performing Model
+Random forest seems to yield the best result when compared to other models in consideration. The model did better at predicting non diabetes patients but did fairly at predicting patients with diabetes.
+# Key Findings and Insights
+All the models except decision tree classifier performed well at predicting non diabetes patient. But the decision tree classifier performed well at predicting diabetes patients. Random Forest Classifier performs best. Random Forest Classifier had a training accuracy of 77.5% and test accuracy of 76.6%. 
+
+
 
