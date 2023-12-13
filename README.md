@@ -28,6 +28,8 @@ Exploratory data analysis were performed before training the data. Bar Chart of 
 
 The proportion of non-diabetes patient in the dataset is 65%. We checked for multicollinearity in the dataset by performing a heat map plot to show the correlations among the features. This is displayed below:
 
+![heat map](https://github.com/DannyRukks/Diabetes-Prediction-using-Machine-Learning-Classification/assets/97890440/4c4aaa03-a713-441d-bbee-988ea5a5c767)
+
 # Classifier Models
 The dataset was trained using logistic regression and three other classifiers such as KNearest neighbor classifier, Decision tree classifer and Random Forest classifier. All models used the same training and test splits and the same cross-validation method. The models were tune using hyper parameters and the best parameters were used for the prediction. The result for the models is displayed below
 ```
@@ -41,7 +43,10 @@ Results
 ![Tabular result](https://github.com/DannyRukks/Diabetes-Prediction-using-Machine-Learning-Classification/assets/97890440/e87f6a14-4e4a-47f7-9b3b-4e62cc6a4876)
 
 # Best Performing Model
-Random forest seems to yield the best result when compared to other models in consideration. The model did better at predicting non diabetes patients but did fairly at predicting patients with diabetes.
+Random forest seems to yield the best result when compared to other models in consideration. The model did better at predicting non diabetes patients but did fairly at predicting patients with diabetes. The confusion matrix of random forest model classifier is shown below.
+
+![random forest](https://github.com/DannyRukks/Diabetes-Prediction-using-Machine-Learning-Classification/assets/97890440/a0dd128b-c8ae-4f40-bd77-c252b993559a)
+
 # Key Findings and Insights
 All the models except decision tree classifier performed well at predicting non diabetes patient. But the decision tree classifier performed well at predicting diabetes patients. Random Forest Classifier performs best. Random Forest Classifier had a training accuracy of 77.5% and test accuracy of 76.6%. 
 
