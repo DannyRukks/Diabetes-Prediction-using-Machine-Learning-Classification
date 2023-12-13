@@ -16,4 +16,12 @@ on the selection of these instances from a larger database. In particular, all p
 - DiabetesPedigreeFunction
 - Age
 - Outcome
+# Data Prepartation/Cleaning
+- Data loading/inspection
+- Zero values in columns such as bloodpressure, BMI and skin thickness were replace with average values.
+- Dropping duplicate values
+- Deleting redundant columns
+# Exploratory Data Analysis
+Exploratory data analysis were performed before training the data. Bar Chart of the value counts for the "Outcome" column to calculate the relative frequencies of the classes was created. This shows the relative proportion of diabetes and non diabetes.
+
 
